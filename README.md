@@ -5,4 +5,12 @@
 你的学号
 你的密码
 python脚本
-配合windows任务计划使用
+建议配合windows任务计划食用
+
+##环境
+Linux/windows
+Edge
+Edgedriver
+
+##库
+selenium
