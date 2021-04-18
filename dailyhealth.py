@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains #引入鼠标
 from selenium.webdriver.common.keys import Keys #引入键盘
 import time
+import sys
 
  # 打开网址登陆
 driver = webdriver.Edge(
@@ -24,16 +25,18 @@ url = "https://xmuxg.xmu.edu.cn/app/214"
 driver.get(url)
 #我的表单
 driver.find_element_by_xpath('//*[@id="mainM"]/div/div/div/div[1]/div[2]/div/div[3]/div[2]').click()
-#xpath 定位然后使用键盘向下按键进行滚动
 time.sleep(1)
 driver.find_element_by_xpath('//*[@id="select_1582538939790"]/div/div').click()
 time.sleep(1)
 driver.find_element_by_xpath('/html/body/div[8]/ul/div').click()
  # 提交
-time.sleep(3)
+time.sleep(1)
 driver.find_element_by_class_name("form-save position-absolute").click()
 driver.switch_to_alert()
-time.sleep(2)
+time.sleep(1)
 print('打卡成功')
-  # 退出
+  # 退出网站
 driver.close()
+#退出程序
+time.sleep(1)
+sys.exit()
