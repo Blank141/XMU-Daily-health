@@ -24,6 +24,7 @@ print('登录成功！')
 url = "https://xmuxg.xmu.edu.cn/app/214"
 driver.get(url)
 #我的表单
+time.sleep(1)
 driver.find_element_by_xpath('//*[@id="mainM"]/div/div/div/div[1]/div[2]/div/div[3]/div[2]').click()
 time.sleep(1)
 driver.find_element_by_xpath('//*[@id="select_1582538939790"]/div/div').click()
@@ -31,8 +32,8 @@ time.sleep(1)
 driver.find_element_by_xpath('/html/body/div[8]/ul/div').click()
  # 提交
 time.sleep(1)
-driver.find_element_by_class_name("form-save position-absolute").click()
-driver.switch_to_alert()
+driver.find_element_by_xpath("//*[@class='form-save position-absolute']").click()
+driver.switch_to.alert.accept() # 保存确定
 time.sleep(1)
 print('打卡成功')
   # 退出网站
