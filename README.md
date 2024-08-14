@@ -1,5 +1,4 @@
 # XMU-Daily-health
-生科院大一<br>
 这是一个<br>
 厦门大学每日健康打卡程序 <br>
 里面的<br>
